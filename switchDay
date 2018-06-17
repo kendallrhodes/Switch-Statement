@@ -1,5 +1,5 @@
 let x = new Date();
-let day = x.getDate();
+let day = x.getDay();
 switch (day) {
 	case 'Sunday':
 		console.log('Today is my own and no one can take that away from me.');
@@ -26,4 +26,5 @@ switch (day) {
 		break;
 	default:
 		console.log("I'm going back to bed");
+    break;
 }
