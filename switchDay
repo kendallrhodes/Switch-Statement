@@ -1,0 +1,36 @@
+let x = new Date();
+let day = new Array(7);
+day[0] = 'Sunday';
+day[1] = 'Monday';
+day[2] = 'Tuesday';
+day[3] = 'Wednesday';
+day[4] = 'Thursday';
+day[5] = 'Friday';
+day[6] = 'Saturday';
+switch (day) {
+	case 'Sunday':
+		console.log('Today is my own and no one can take that away from me.');
+		break;
+	case 'Monday':
+		console.log('Today is my NOT my own. Today I am a wage slave.');
+		break;
+	case 'Tuesday':
+		console.log('Today is my NOT my own. Today I am STILL a wage slave.');
+		break;
+	case 'Wednesday':
+		console.log('Today is my NOT my own. Today I am STILL a wage slave.');
+		break;
+	case 'Thursday':
+		console.log('Today is my own NOT. Today I am STILL a wage slave.');
+		break;
+	case 'Friday':
+		console.log(
+			'Today is my own NOT but there is hope. The weekend begins tomorrow.'
+		);
+		break;
+	case 'Saturday':
+		console.log('Today is my own and no one can take that away from me.');
+		break;
+	default:
+		console.log("I'm going back to bed");
+}
