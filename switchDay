@@ -1,24 +1,32 @@
 let x = new Date();
-let day = x.getDay();
-switch (day) {
+let dayOfWeek = new Array(7);
+dayOfWeek[0] = 'Sunday';
+dayOfWeek[1] = 'Monday';
+dayOfWeek[2] = 'Tuesday';
+dayOfWeek[3] = 'Wednesday';
+dayOfWeek[4] = 'Thursday';
+dayOfWeek[5] = 'Friday';
+dayOfWeek[6] = 'Saturday';
+let n = dayOfWeek[x.getDay()];
+switch (n) {
 	case 'Sunday':
 		console.log('Today is my own and no one can take that away from me.');
 		break;
 	case 'Monday':
-		console.log('Today is my NOT my own. Today I am a wage slave.');
+		console.log('Today is Monday and I\'m not happy about that.');
 		break;
 	case 'Tuesday':
-		console.log('Today is my NOT my own. Today I am STILL a wage slave.');
+		console.log('Today is Tuesday and I\'m not happy about that.');
 		break;
 	case 'Wednesday':
-		console.log('Today is my NOT my own. Today I am STILL a wage slave.');
+		console.log('Today is Wednesday and I\'m not happy about that.');
 		break;
 	case 'Thursday':
-		console.log('Today is my own NOT. Today I am STILL a wage slave.');
+		console.log('Today is Thursday and I\'m not happy about that.');
 		break;
 	case 'Friday':
 		console.log(
-			'Today is my own NOT but there is hope. The weekend begins tomorrow.'
+			'Today is Friday and the day is STILL not my own NOT but there is hope. The weekend begins tomorrow. Hooray!'
 		);
 		break;
 	case 'Saturday':
@@ -26,5 +34,5 @@ switch (day) {
 		break;
 	default:
 		console.log("I'm going back to bed");
-    break;
+		break;
 }
